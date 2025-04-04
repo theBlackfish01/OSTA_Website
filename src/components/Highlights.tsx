@@ -14,39 +14,39 @@ import ThumbUpAltRoundedIcon from '@mui/icons-material/ThumbUpAltRounded';
 const items = [
     {
         icon: <SettingsSuggestRoundedIcon />,
-        title: 'Adaptable performance',
+        title: 'Smart adaptability',
         description:
-            'Our product effortlessly adjusts to your needs, boosting efficiency and simplifying your tasks.',
+            'OSTA adjusts to market changes in real time, helping you stay on top of your investment strategy with ease.',
     },
     {
         icon: <ConstructionRoundedIcon />,
-        title: 'Built to last',
+        title: 'Robust AI engine',
         description:
-            'Experience unmatched durability that goes above and beyond with lasting investment.',
+            'Powered by advanced neural networks, OSTA delivers reliable predictions designed for long-term success.',
     },
     {
         icon: <ThumbUpAltRoundedIcon />,
-        title: 'Great user experience',
+        title: 'Intuitive dashboard',
         description:
-            'Integrate our product into your routine with an intuitive and easy-to-use interface.',
+            'Manage your portfolio effortlessly through a clean, user-friendly interface built for all experience levels.',
     },
     {
         icon: <AutoFixHighRoundedIcon />,
-        title: 'Innovative functionality',
+        title: 'Cutting-edge insights',
         description:
-            'Stay ahead with features that set new standards, addressing your evolving needs better than the rest.',
+            'Leverage real-time sentiment analysis and market trends to make smarter, faster investment decisions.',
     },
     {
         icon: <SupportAgentRoundedIcon />,
-        title: 'Reliable support',
+        title: 'Investor-focused support',
         description:
-            'Count on our responsive customer support, offering assistance that goes beyond the purchase.',
+            'We’re here to help—OSTA provides responsive support and resources to guide you every step of the way.',
     },
     {
         icon: <QueryStatsRoundedIcon />,
-        title: 'Precision in every detail',
+        title: 'Data-driven accuracy',
         description:
-            'Enjoy a meticulously crafted product where small touches make a significant impact on your overall experience.',
+            'Our AI is trained on historical data and market behavior, delivering precise stock predictions you can trust.',
     },
 ];
 
@@ -54,12 +54,16 @@ export default function Highlights() {
     return (
         <Box
             id="highlights"
-            sx={{
+            sx={(theme) => ({
                 pt: { xs: 4, sm: 12 },
                 pb: { xs: 8, sm: 16 },
                 color: 'white',
                 bgcolor: 'grey.900',
-            }}
+                ...theme.applyStyles('dark', {
+                    backgroundImage:
+                        'radial-gradient(ellipse 80% 50% at 50% -20%, hsl(210, 100%, 16%), transparent)',
+                }),
+            })}
         >
             <Container
                 sx={{

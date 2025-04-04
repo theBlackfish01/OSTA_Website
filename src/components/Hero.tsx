@@ -74,7 +74,7 @@ export default function Hero() {
                             fontSize: 'clamp(3rem, 10vw, 3.5rem)',
                         }}
                     >
-                        AI&nbsp;
+                        AI&nbsp;Portfolio&nbsp;Management
                         <Box
                             component="span"
                             sx={(theme) => ({
@@ -84,9 +84,30 @@ export default function Hero() {
                                 }),
                             })}
                         >
-                            Portfolio&nbsp;Management
+
                         </Box>
                     </Typography>
+                    <Typography
+                    variant="h1"
+                    sx={{
+                        display: 'flex',
+                        flexDirection: 'row',
+                        alignItems: 'center',
+                        fontSize: 'clamp(2rem, 5vw, 2.5rem)',
+                    }}
+                >
+                    <Box
+                        component="span"
+                        sx={(theme) => ({
+                            color: 'primary.main',
+                            ...theme.applyStyles('dark', {
+                                color: 'primary.light',
+                            }),
+                        })}
+                    >
+                        Coming&nbsp;Soon!
+                    </Box>
+                </Typography>
                     <Typography
                         sx={{
                             textAlign: 'center',
