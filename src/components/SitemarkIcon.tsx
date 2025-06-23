@@ -8,7 +8,7 @@ export default function SitemarkIcon() {
             src={logo}
             alt="Logo"
             sx={{
-                height: 21,
+                height: 41,
                 width: 100,
                 mr: 2,
                 objectFit: 'contain'

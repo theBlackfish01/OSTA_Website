@@ -58,7 +58,8 @@ export default function Highlights() {
                 pt: { xs: 4, sm: 12 },
                 pb: { xs: 8, sm: 16 },
                 color: 'white',
-                bgcolor: 'grey.900',
+                bgcolor: '#34495e',
+                borderRadius: '15px',
                 ...theme.applyStyles('dark', {
                     backgroundImage:
                         'radial-gradient(ellipse 80% 50% at 50% -20%, hsl(210, 100%, 16%), transparent)',
@@ -80,10 +81,10 @@ export default function Highlights() {
                         textAlign: { sm: 'left', md: 'center' },
                     }}
                 >
-                    <Typography component="h2" variant="h4" gutterBottom>
+                    <Typography component="h2" variant="h3" gutterBottom>
                         Highlights
                     </Typography>
-                    <Typography variant="body1" sx={{ color: 'grey.400' }}>
+                    <Typography variant="body1" sx={{ color: 'white' }}>
                         Explore why our product stands out: adaptability, durability,
                         user-friendly design, and innovation. Enjoy reliable customer support and
                         precision in every detail.
